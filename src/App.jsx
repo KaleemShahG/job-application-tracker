@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Dashboard from "./pages/Dashboard";
-import AddJobPage from "./pages/AddJobPage"; // new modern styled page
+import AddJobPage from "./pages/AddJobPage";
 import JobDetails from "./pages/JobDetails";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/job-application-tracker">
       <div className="flex flex-col min-h-screen">
         {/* Header */}
         <Header />
